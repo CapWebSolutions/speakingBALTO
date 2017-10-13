@@ -70,10 +70,10 @@
 	<h1>Windows</h1>
 	<div style="text-align:right;font-size:16px;color:#000;"><br><br><br>WordCamp Baltimore<br>Oct 14, 2017</div>
 	<aside class="notes">
-		Thanks for sopping in<br>
-		Last talk of the day<br>
-		WordPress dev on Windows...If you have been doing it or trying to do it for any time you
-		know that there's not much out there. Its not a familiar topic at WordPress gatherings.
+		Thanks for stopping in<br>
+		This is the Last talk of the day<br>
+		WordPress Dev on Windows...If you have been doing it or trying to do it for any time you
+		know that there's not much discussion out there. Its not a familiar topic at WordPress gatherings.
 		I'm here to let you know that It IS possible and devs are doing it.
 	</aside>
 </section>
@@ -94,7 +94,7 @@
 </section>
 			 
 <section>
-	<h2>Goals For Session</h2><hr>
+	<h2>Goals For This Session</h2><hr>
 	<ul>
 		<li>Create environment on a Windows 10 box with ...</li>
 		<li>Familiar Windows UI</li>
@@ -113,13 +113,13 @@
 </section>
 			
 <section data-background="#73232F">
-	<h2>This is What I Have in Mind</h2><hr>
+	<h2>This is What I Have On My Desktop</h2><hr>
 	<ul>
-		<li>Local by Flywheel</li>
-		<li>Visual Studio Code</li>
+		<li>Local by Flywheel - LAMP stack</li>
+		<li>Visual Studio Code - editor</li>
 		<li>FileZilla FTP</li>
-		<li>Git Version Control</li>
-		<li>WP Migrate DB / Pro</li>
+		<li>Git - version control</li>
+		<li>WP Migrate DB - deployment</li>
 	</ul>
 	<aside class="notes">
 	To put it more specifically, the workflow includes local dev and file structure, 
@@ -153,7 +153,10 @@
 		<figcaption>Local by Flywheel - https://local.getflywheel.com/</figcaption>
 	</figure>
 	<aside class="notes">
-		The primary tool in my dev is Local by flywheel. Flywheel purchased the premium OS X tool from Pressmatic in December 2016 and ported it to multiple environments. I had previously used Desktopserver from ServerPress, and still use it for sites being developed for older PHP environments. I am able to run Local by Flywheel on a Windows Surface Pro 4 tablet running Windows 10 Pro with 8 GB RAM.
+		The primary tool in my dev is Local by flywheel. 
+		Flywheel purchased the premium OS X tool from Pressmatic in December 2016
+		 and ported it to multiple environments. 
+		 I had previously used Desktopserver from ServerPress, and still use it for sites being developed for older PHP environments. I am able to run Local by Flywheel on a Windows Surface Pro 4 tablet running Windows 10 Pro with 8 GB RAM.
 	</aside>
 </section>
 
@@ -219,32 +222,15 @@
 		<li>Quick Windows Install</li>
 		<li>Uses .NET, VirtualBox, Docker</li>
 		<li>Includes database utility, SSL cert authentication, Email handler</li>
+		<li>Installs additional support utilities</li>
 	</ul>
 </div>
 	<aside class="notes">
 		470MB download. Don't do it here.
 		Extra apps are installed if not already present on your system. 
-	</aside>
-</section>
-<section>
-	<h2>Setup Local By Flywheel</h2><hr>
-	<!-- <div class='two-col-right'>  -->
-	<!-- <figure> -->
-	<!-- <img src="wordpress-on-windows-wcbalt/assets/images/lbf-site-ready.png" /> -->
-	<!-- <figcaption>LBF Installer</figcaption> -->
-	<!-- </figure> -->
-	<!-- </div> -->
-	<!-- <div class="two-col-left"> -->
-	<ul>
-		<li>Run Installer</li>
-		<li>.NET framework required</li>
-		<li>Installs additional support utilities</li>
-	</ul>
-	<!-- </div> -->
-	<aside class="notes">
-	Not going to go thorugh the LBF install. Its a typical Windows install.
-	Default install to c:\Users\{username}\Local Sites<br>
-		docker, virtualbox
+		Not going to go thorugh the LBF install. Its a typical Windows install.
+		Default install to c:\Users\{username}\Local Sites<br>
+			docker, virtualbox
 	</aside>
 </section>
 
@@ -267,8 +253,13 @@
 <section><h3>Demo: Adding New Site on Local</h3></section>
 <section data-background-video="wordpress-on-windows-wcbalt/assets/images/lbf-add-new-site.mp4" data-background-color="#000"></section>
 
+<section>
+	<h3>Local Dev Environment Exists on Windows</h3><hr>
+	<p>What does it look like and what do I do with it?</p>
+</section>
+
 <section >
-	<h3>WordPress on Windows</h3><hr>
+	<h3>WordPress Lives on Windows</h3><hr>
 	<img src="wordpress-on-windows-wcbalt/assets/images/lbf-windows-folder-structure.png" />
 	<p>New WP Site folder structure on C:\</p>
 <aside class="notes">
@@ -290,8 +281,9 @@ Speaking of editing ....
 		Open source. Lots of extensions. Good community support. Monthly updates. 
 		</aside>
 </section>
-<section>
+<section data-state="two-col-wrapper">
 <h2>Code Editing / Development</h2><hr>
+<div class="two-col-left">
 <ul>
 	<li>Right Click LBF Admin "Show Folder"</li>
 	<li>Open Local Project Folder VSC</li>
@@ -300,6 +292,10 @@ Speaking of editing ....
 	<li>Drag/drop files & folders</li>
 	<li>Intellisense - Code aware - syntax highlighting, auto-complete</li>
 </ul>
+</div>
+<div class="two-col-right">
+	<img src="wordpress-on-windows-wcbalt/assets/images/lbf-right-click.png"/>
+</div>
 <aside class="notes">VSC runs on Windows, Linux, and even macOS.
 		offer link to Download
 	LBF - Right Click show Folder - Drill to <strong>Public</strong> folder 
@@ -313,6 +309,11 @@ Speaking of editing ....
 	<img src="wordpress-on-windows-wcbalt/assets/images/vsc-setup-8.png"/>
 	<figcaption>This is what we're talking about</figcaption>
 </figure>
+<aside class="notes">
+	Action bar on left<br>
+Quick links to open file or folder<br>
+lots of help resources.
+</aside>
 </section>
 
 <section>
@@ -344,17 +345,18 @@ Speaking of editing ....
 		Beauty of local dev means no file transfers to remote host.
 		Editing live in your dev environment.
 		Refresh browser to see success. 
-		lather-rinse-repeat
+		lather-rinse-repeat<br>
+		move onto a little bit on deployment
 </aside>
 </section>
 
 <!-- <section data-external="wordpress-on-windows-wcbalt/wcbalt-deployment.html"> </section> -->
 
 <section>
-	<h3>A Little Deployment Anyone?<br>Basic Assumptions</h3><hr>
-		<ul>
+	<h3>A Little Deployment Anyone?</h3><hr>
+		<p>Basic Assumptions:</p><ul>
 			<li>New WordPress Installation Exists on Host</li>
-			<li>WP Migrate DB Pro Installed and Activated<br>on local and remote sites
+			<li>WP Migrate DB Installed and Activated<br>on local and remote sites
 				<ul>
 					<li>Migrate DB Pro handles handshake</li>
 					<li>Authenticates connection</li>
@@ -367,14 +369,17 @@ Speaking of editing ....
 		Again, emphasis on "little"
 		Focusing on local environment
 		WP Migrate DB PRO makes my life better.
-		Free works. Must jump into phpMyAdmin to import db</aside>
-	</section>
-	<section > 
+	With these tools the magic of deployment is like waving your handshake
+</aside>
+</section>
+<section > 
 		<figure>
 		<img src="wordpress-on-windows-wcbalt/assets/images/magic-waving-of-hands.gif"/>
 		<figcaption>Waving of Hands<br>Magic Deployment Happens</figcaption>
 		</figure>
-	</section>
+		<aside>Ok. A little more about this magic stuff 
+		</aside>
+</section>
 				
 	<section>
 	<h2>Deployment Magic with<br>WP Migrate DB</h2><hr>
@@ -383,9 +388,8 @@ Speaking of editing ....
 	<figcaption>Create New Migration Profile</figcaption>
 	</figure>
 	<aside class="notes">
-		WP Migrate DB and DB Pro work off profiles that you set up to control destination of deployment. By deployment I'm talking about moving your working site to a public serveer - production or staging.
-		Have a Production profile<br>
-		Have a staging profile
+		WP Migrate DB works off profiles that you set up to control destination of deployment. By deployment I'm talking about moving your working site to a public serveer - production or staging.
+		Have a Production profile<br>Have a staging profile
 	</aside>
 	</section>
 	
@@ -413,7 +417,7 @@ Speaking of editing ....
 	<img src="wordpress-on-windows-wcbalt/assets/images/migration-in-progress.png"/>
 	<figcaption>Migration in Progress</figcaption>
 	</figure>
-	<aside class="notes">Database being migrated.</aside>
+	<aside class="notes">Database being migrated from local development to remote site.</aside>
 	</section>
 	
 	<section>
@@ -424,7 +428,7 @@ Speaking of editing ....
 	</figure>
 	<aside class="notes">WordPress database migrated<br>
 		no files have been migrated yet<br>
-		Use FTP to copy your local wp-content to remote
+		Use FTP to copy your local wp-content to remote<br>May be going on in background task
 	</aside>
 	</section>
 	
@@ -435,7 +439,6 @@ Speaking of editing ....
 			<li>SFTP/FTP connection to remote site</li>
 			<li>Drag WP-CONTENT from local to remote</li>
 		</ul>
-		<p>Remainder of Git process<br>&nbsp;&nbsp;left as an exercise for the viewer ;-)</p>
 		<aside class="notes">The first upload will take some time, since plugins and media will be going.<br>
 			Lots of efficiences can be added to this<br>
 			remote install of plugins for speed<br>
@@ -446,9 +449,8 @@ Speaking of editing ....
 		<p>Sigh</p>
 		<p>Lather &middot; Rinse &middot; Repeat</p>
 		<aside class="notes">
-			Review with client<br>
-			revise locally<br>
-			deploy, repeat
+			Review with client - revise locally - deploy, repeat<br>
+			When ready to put  asake in the ground ... we need some control
 		</aside>
 	</section>
 	
@@ -463,7 +465,7 @@ Speaking of editing ....
 		<li>Add your project folder</li>
 	</ul>
 	<p>Remainder of Git process<br>&nbsp;&nbsp;left as an exercise for the viewer after a quick "live" demo</p>
-	<aside class="notes">Emphasis on "little"<br>
+	<aside class="notes">Emphasis on "little" - we will hit on the start-up steps<br>
 		Think of version control as insurance<br>
 		When, not if, you screw something up<br>
 		Even for one person teams, like me<br>
@@ -488,8 +490,13 @@ Speaking of editing ....
 </section>
 
 <section><h3>Demo: Git with Visual Studio Code</h3></section>
+
 <section data-background-video="wordpress-on-windows-wcbalt/assets/images/wcbalt-lbf-git.mp4" data-background-color="#000"></section>
 
+<section>
+	<h2>It Is Happening</h2><hr>
+	<p>Even if it sounds quiet at your local WordPress technical gathering ... </p>
+</section>
 
 <section data-background="#73232F">
 		<h2>Wrapping It Up</h2><hr>
@@ -499,7 +506,7 @@ Speaking of editing ....
 			<li>Editor: Visual Studio Code</li>
 			<li>FTP Client: FileZilla</li>
 			<li>Source Control: Integrated Git</li>
-			<li>Deployment: WP Migrate DB / Pro</li>
+			<li>Deployment: WP Migrate DB</li>
 		</ul>
 		<audio data-autoplay src="wordpress-on-windows-wcbalt/assets/images/sounds-of-silence.mp3"></audio>
 		<p class="fragment" data-autoslide="5000"></p>
@@ -511,14 +518,14 @@ Speaking of editing ....
 
 		<!-- <section data-external="wordpress-on-windows-wcbalt/wcbalt-signoff.html"> </section> -->
 
-<section>
+<!-- <section>
 	<h2>Lingering Thoughts</h2><hr>
 	<br>anyone?<br>
 	&nbsp;&nbsp;&nbsp;&nbsp;anyone?
 	<aside class="notes">
 	. . . a little Ferris Bueller reference never hurts in closing
 	</aside>
-</section>
+</section> -->
 
 <section data-state="two-col-wrapper">
 	<h2>Thanks!</h2><hr>
@@ -549,20 +556,6 @@ Speaking of editing ....
 				progress: true,
 				history: true,
 				center: true,
-				audio: {
-					prefix: 'audio/', 	// audio files are stored in the "audio" folder
-					suffix: '.ogg',		// audio files have the ".ogg" ending
-					textToSpeechURL: null,  // the URL to the text to speech converter
-					defaultNotes: false, 	// use slide notes as default for the text to speech converter
-					defaultText: false, 	// use slide text as default for the text to speech converter
-					advance: 0, 		// advance to next slide after given time in milliseconds after audio has played, use negative value to not advance 
-					autoplay: false,	// automatically start slideshow
-					defaultDuration: 5,	// default duration in seconds if no audio is available 
-					playerOpacity: 0.05,	// opacity value of audio player if unfocused
-					playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', // style used for container of audio controls 
-					startAtFragment: false, // when moving to a slide, start at the current fragment or at the start of the slide
-				},
-
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
@@ -575,7 +568,6 @@ Speaking of editing ....
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: 'plugin/external/external.js', condition: function() { return !!document.querySelector( '[data-external]' ); } },
-					{ src: 'plugin/audio-slideshow/audio-slideshow.js', condition: function( ) { return !!document.body.classList; } },
 				]
 			});
 		
