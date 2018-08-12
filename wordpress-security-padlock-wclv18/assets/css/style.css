@@ -1,0 +1,25 @@
+.two-col-wrapper .two-col-left {
+	float: left;
+	width: 60%;
+  }
+  
+.two-col-wrapper .two-col-right {
+	float: right;
+	width: 40%;
+  }
+  .two-col-wrapper .smaller,
+  .smaller {
+	font-size: 16px;
+	}
+	
+	html.dimbg .slide-background {
+		opacity: 0.2 !important;
+	}
+
+	html,body{height:100%;margin:0;padding:0}
+	/* body:before{
+    content:"";
+    width:100%;
+    height:100%;
+    display:block;
+} */
