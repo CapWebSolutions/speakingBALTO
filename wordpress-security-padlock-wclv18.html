@@ -46,6 +46,9 @@
 	body {
 		background-color: #027F3D;
 	}
+	section {
+		data-state: "dimbg";
+	}
 	</style>
 	<script>
 		var link = document.createElement( 'link' );
@@ -57,158 +60,65 @@
 </head>
 <body>
 <div class="reveal">
-<div class="slides">
- 
-			<!-- <section data-external="wordpress-security-padlock-wclv18/wcbalt-intro.html"> </section> -->
+	<div class="slides">
+		<section data-external="wordpress-security-padlock-wclv18/intro.html"> </section>
+		<section data-external="wordpress-security-padlock-wclv18/bio.html"> </section>
+		<section data-external="wordpress-security-padlock-wclv18/ssl.html"> </section>
+		<section data-external="wordpress-security-padlock-wclv18/basic-security.html"> </section>
+		<section data-external="wordpress-security-padlock-wclv18/two-colo-slide.html"> </section>
+		<section data-external="wordpress-security-padlock-wclv18/two-colo-slide.html"> </section>
+		<section data-external="wordpress-security-padlock-wclv18/how-to-follow-up.html"> </section>
+		<section data-external="wordpress-security-padlock-wclv18/level-201-security.html"> </section>
+		<section data-external="wordpress-security-padlock-wclv18/resources-attributions.html"> </section>
+		<section data-external="wordpress-security-padlock-wclv18/signoff.html"> </section>
+	</div> <!-- slides div -->
+</div> <!-- reveal div -->
 
-<section data-background="wordpress-security-padlock-wclv18/assets/images/green-fence-with-lock.jpg" data-state="dimbg">
-	<h3>WordPress Security-></h3>
-	<h2 style="text-transform:none;">More than a Green Padlock!</h2>
-	<div style="text-align:right;font-size:small;color:#000;">WordCamp Lehigh Valley<br>Aug 18, 2018</div>
-	<aside class="notes">
-		Thanks for stopping in<br>
-		This is the Last talk before lucnh<br>
-		You have your SSL certificate and the green padlock in the address bar. You're done. Your website is secure. Right? No? Huh? Whadda I need to do? Let's take a walk past the Let's Encrypt cloak of security and see what you really need to do to help secure your website from the dangers of the public interwebs. No programming needed. A little common sense, a plugin or two and you are well on your way to securing your site. It takes is a few straightforward steps to eliminate almost all of the security vulnerabilities in the basic setup of your WordPress website.
-	</aside>
-</section>
-			
-<section data-state="dimbg">
-	<h2>Goals For This Session</h2><hr>
-	<ul>
-		<li>Basic website security</li>
-		<li>usernames / passwords / updates / scanning</li>
-		<li>low hanging fruit</li>
-		<li>Coding experience not required</li>
-		<li>What can I stop</li>
-		<li>Why does it happen:
-			<ol>
-				<li>sub 1</li>
-			</ol>
-		</li>
-	</ul>
-</section>
-			
-<section data-external="wordpress-security-padlock-wclv18/wclv18-bio.html"> </section>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
 
-
-<section data-state="two-col-wrapper">
-	<h3>Sample Two Column Slidee</h3><hr>
-	<div class='two-col-left'>
-	<img src="wordpress-security-padlock-wclv18/assets/images/placeholder.png"/>
-</div>
-	<div class="two-col-right"> 
-	<ul>
-		<li>list 1</li>
-	</ul>	 
-	</div>
-</section>
-
-
-<section data-state="two-col-wrapper">
-	<h3>define('DISALLOW_FILE_EDIT',true);</h3><hr>
-	<div class='two-col-left'>
-		<figure>
-		<img src="wordpress-security-padlock-wclv18/assets/images/wordpress-admin-no-editing.png">
-		<figcaption>No Editing themes, plugins, or<br>any source from the admin dashboard.</figcaption>
-		</figure>
-	</div>
-	<div class="two-col-right"> 
-		Add to <br>wp-config.php<br> above the<br> /* That's all, stop editing! */<br>line.
-	</div>
-	<aside class="notes">
-	Repeat after me - I will not edit files through the WordPress dashboard. I will edit them in my code editor and then save them to my website.
-	</aside>
-</section>
-
-<section > 
-		<figure>
-		<img src="wordpress-security-padlock-wclv18/assets/images/magic-waving-of-hands.gif"/>
-		<figcaption>Waving of Hands<br>Magic Happens Here</figcaption>
-		</figure>
-		<aside>Ok. A little more about this magic stuff 
-		</aside>
-</section>
-
-
-<section data-background="wordpress-security-padlock-wclv18/assets/images/recycling_symbol.png">
-	<p>Sigh</p>
-	<p>Lather &middot; Rinse &middot; Repeat</p>
-	<aside class="notes">
-		Review with client - revise locally - deploy, repeat<br>
-		When ready to put  asake in the ground ... we need some control
-	</aside>
-</section>
-
-
-
-
-<section data-external="wordpress-security-padlock-wclv18/wclv18-signoff.html"> </section>
-
-<section data-state="two-col-wrapper">
-	<h2>Thanks!</h2><hr>
-	<div class='two-col-left'>
-		<img src="wordpress-security-padlock-wclv18/assets/images/capwebsolutions_logo_final.jpg"/><br>
-		<!-- <img src="wordpress-security-padlock-wclv18/assets/images/capwebsolutions_logo_nocap-trans.png"/> -->
-	</div>
-	<div class="two-col-right">
-	<br><h3>Matt Ryan</h3>
-	<p>matt@capwebsolutions.com<br>@MattRyan_co</p>
-	<!-- <hr style="border-width:2px;"> -->
-	</div><br><br>
-	<hr style="clear:both;border-width:2px;">
-	<p>Q's ???</p>
-	<p>Slides:<br><a href="//capwebsolutions.com/presentations/wordpress-security-padlock-wclv18">capwebsolutions.com/presentations/wordpress-security-padlock</a></p>
-</section>	
-
-
-</div>
-</div>
-
-	<script src="lib/js/head.min.js"></script>
-	<script src="js/reveal.js"></script>
-
-	<script>
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-				theme: Reveal.getQueryHash().theme || 'moon', // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/zoom/linear/fade/none
-			
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'wordpress-security-padlock-wclv18/assets/images/shodan_dark_blurry.jpg',
-				// parallaxBackgroundImage: 'wordpress-security-padlock-wclv18/assets/images/red-fence-with-locks.jpg',
-				// parallaxBackgroundImage: 'wordpress-security-padlock-wclv18/assets/images/green-fence-with-lock.jpg',
-				// parallaxBackgroundSize: '2300px 1600px',
-				// background: linear-gradient(0deg,rgba(255,0,150,0.3),rgba(255,0,150,0.3)),
-
-				// Number of pixels to move the parallax background per slide
-				// - Calculated automatically unless specified
-				// - Set to 0 to disable movement along an axis
-				// parallaxBackgroundHorizontal: 200,
-				// parallaxBackgroundVertical: 50,
-
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/external/external.js', condition: function() { return !!document.querySelector( '[data-external]' ); } },
-				]
-			});
+<script>
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+			theme: Reveal.getQueryHash().theme || 'moon', // available themes are in /css/theme
+			transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/zoom/linear/fade/none
 		
-		Reveal.configure({
-			keyboard: {
-				'&#8593': 'back',
-				13: 'down', // go to the down slide when the ENTER key is pressed
-				32: null, // don't do anything when SPACE is pressed (i.e. disable a reveal.js default binding)
-				40: 'next', // go to the next slide when the ENTER key is pressed
-			}
+			// Parallax scrolling
+			// parallaxBackgroundImage: 'wordpress-security-padlock-wclv18/assets/images/shodan_dark_blurry.jpg',
+			// parallaxBackgroundImage: 'wordpress-security-padlock-wclv18/assets/images/red-fence-with-locks.jpg',
+			// parallaxBackgroundImage: 'wordpress-security-padlock-wclv18/assets/images/green-fence-with-lock.jpg',
+			// parallaxBackgroundSize: '2300px 1600px',
+			// background: linear-gradient(0deg,rgba(255,0,150,0.3),rgba(255,0,150,0.3)),
+
+			// Number of pixels to move the parallax background per slide
+			// - Calculated automatically unless specified
+			// - Set to 0 to disable movement along an axis
+			// parallaxBackgroundHorizontal: 200,
+			// parallaxBackgroundVertical: 50,
+
+			// Optional libraries used to extend on reveal.js
+			dependencies: [
+			{ src: 'plugin/external/external.js', condition: function() { return !!document.querySelector( '[data-external]' ); } },
+			{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+				{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+			]
 		});
-	</script>
+	
+	Reveal.configure({
+		keyboard: {
+			'&#8593': 'back',
+			13: 'down', // go to the down slide when the ENTER key is pressed
+			32: null, // don't do anything when SPACE is pressed (i.e. disable a reveal.js default binding)
+			40: 'next', // go to the next slide when the ENTER key is pressed
+		}
+	});
+</script>
 </body>
 </html>
